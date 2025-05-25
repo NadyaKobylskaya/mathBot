@@ -121,3 +121,7 @@ class ProgressTracker:
         except Exception as e:
             logger.error(f"Error resetting progress for user {user_id}: {e}")
             return False
+from logs import logger
+
+logger.info("Прогресс успешно сохранён.")
+logger.error(f"Ошибка при получении заданий с ФИПИ: {e}")
